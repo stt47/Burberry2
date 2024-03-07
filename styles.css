@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'NeutronLight';
+    src: url('neutron-light.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+}
+
+.background img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+    background-size: 120%; /* Adjust the value as needed */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Damase;
+    font-weight: 10;
+}
+
+.utility-icons {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.utility-icons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.utility-icons ul li {
+    margin-right: 35px;
+}
+
+.search-button,
+.bag-icon,
+.menu-button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button svg,
+.bag-icon svg,
+.menu-button svg {
+    width: 100%;
+    height: auto;
+    fill: #000;
+}
+
+.main-content {
+    padding-top: 100px;
+}
+
+.carousel {
+    background-color: #eee;
+    height: calc(100vh - 100px);
+    width: 100vw;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-nav ul li a,
+.utility-icons ul li a {
+    font-size: 150%;
+}
+
+.burberry-logo {
+    height: auto;
+    width: 265px;
+    position: absolute;
+    top: 1px;
+    left: 70%;
+    transform: translateX(-70%);
+}
+
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.classics-section {
+    position: absolute;
+    left: 20px;
+    bottom: -860px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+
+.categories-section:nth-child(1) {
+    position: absolute;
+    font-weight: lighter;
+    font-size: 15px;
+    bottom: -860px; /* Adjust this value to increase or decrease the spacing for the "Women" section */
+    right: -890px; /* Adjust this value to change the horizontal position for the "Women" section */
+}
+
+.categories-section:nth-child(2) {
+    position: absolute;
+    font-weight: lighter;
+    font-size: 15px;
+    bottom: -860px; /* Adjust this value to increase or decrease the spacing for the "Men" section */
+    right: -925px; /* Adjust this value to change the horizontal position for the "Men" section */
+}
+
+.categories-section:last-child {
+    margin-right: 0;
+}
